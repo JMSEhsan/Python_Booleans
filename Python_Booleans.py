@@ -26,3 +26,27 @@ print("myobject value: ", bool(myobject))
 def myFunction():
     return True
 print ("myFunction:", myFunction())
+
+# Function return a boolean using condition
+
+y = bool(int(input("Please enter a boolean condition. 0 for False and 1 for True: ")))
+def myFunction2():
+    return y
+
+if myFunction2():
+    print("myFunction2 returns True")
+else:
+    print("myFunction2 returns False")
+
+# Check if an object is an integer or not
+
+x = input("Please enter an integer: ")
+try:
+    try:
+        x = int(x)
+        print("is", x, "integer?", isinstance(x, int))
+    except:
+        x = float(x)
+        print("is", x, "float?", isinstance(x, float))
+except:
+    print("is", x , "string?", isinstance(x, str))
