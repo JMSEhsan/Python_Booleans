@@ -20,3 +20,9 @@ class myclass():
         return 0
 myobject = myclass()
 print("myobject value: ", bool(myobject))
+
+# Function return a boolean
+
+def myFunction():
+    return True
+print ("myFunction:", myFunction())
